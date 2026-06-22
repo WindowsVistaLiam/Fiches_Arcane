@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Archive RP évolutive pour répertorier les personnages, histoires, pouvoirs et notes de jeu." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+<title>Archives RP — Accueil</title>
+</head>
+<body data-page="home">
+<div class="ambient"><span></span><span></span><span></span></div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Retour à l’accueil">
+    <span class="brand-mark">◆</span>
+    <span>Archives RP</span>
+  </a>
+  <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="personnages.html">Personnages</a>
+    <a href="fiche.html?id=ron-ironheart">Exemple fiche</a>
+  </nav>
+</header>
+<main>
+  <section class="hero-shell page-enter">
+    <div class="hero-copy">
+      <p class="eyebrow">Catalogue RP · Arcane / Runeterra · Fiches évolutives</p>
+      <h1>Un site pour centraliser toutes tes fiches RP.</h1>
+      <p class="lead">Retrouve les personnages, leurs origines, leurs pouvoirs, leurs histoires et leurs notes importantes dans une archive sombre, propre et prête à accueillir de nouvelles fiches.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="personnages.html">Voir les personnages</a>
+        <a class="btn ghost" href="fiche.html?id=shin-wanheda">Ouvrir Shin</a>
+      </div>
+    </div>
+    <aside class="hero-panel glass-card">
+      <p class="panel-kicker">Archive active</p>
+      <div id="homeStats" class="stats-grid compact"></div>
+      <p class="panel-note">Sasha Solsa n’est pas intégrée : elle sert uniquement de référence de template.</p>
+    </aside>
+  </section>
+
+  <section class="container section-block">
+    <div class="section-heading">
+      <p class="eyebrow">Accès rapide</p>
+      <h2>Personnages enregistrés</h2>
+    </div>
+    <div id="featuredCharacters" class="cards-grid"></div>
+  </section>
+</main>
+<footer class="footer">Archive RP — HTML / CSS / JavaScript, sans dépendance serveur.</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
